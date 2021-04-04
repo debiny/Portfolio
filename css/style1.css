@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    font-size: 10px;
+    /* faz o reset do rem */
+}
+
+.btn {
+    border-radius: 3rem;
+    color: honeydew;
+}
+
+.btn-cinza {
+    background-color: gray;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    background: url(../img/banner-bg.png) no-repeat;
+    height: 90vh;
+    text-align: center;
+    padding-top: 20rem;
+    color: white;
+}
+
+.sobre__titulo{
+    font-size: 4rem;
+    color: violet;
+}
+
+.sobre-descricao, .sobre-habilidades {
+    width: 40%;
+    display: inline-block;
+    line-height: 1.5;
+}
