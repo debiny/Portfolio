@@ -43,10 +43,11 @@ a {
 
 .banner {
   background: url(../img/banner.png) no-repeat;
-  height: 66vh;
+  height: 70vh;
   text-align: center;
   color: #2e3641;
-}
+  padding-top: 80px;
+  }
 
 .btn-sobre {
   background-color: gray;
@@ -56,7 +57,7 @@ a {
 
 .sobre {
   color: #2e3641;
-  height: 20vh;
+  height: 18vh;
   margin-left: 20px;
 }
 
@@ -111,5 +112,4 @@ a {
   display: flex;
   justify-content: center;
   margin-top: 80px;
-  padding: 10px;
 }
