@@ -25,13 +25,14 @@ a {
 
 /* ---------------------------------NAVBAR -------------------------------------*/
 
-
+.row-navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 .navbar {
   height: 10vh;
   width: 100%;
-  position: sticky;
-  top: 0;
-
 }
 
 .nav-link,
@@ -64,23 +65,24 @@ a {
 .sobre-descricao,
 .sobre-habilidades {
   height: 70vh;
-  width: 48%;
-  display: inline-block;
   line-height: 1.5;
   margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;  
   border-left-width: 10px;
+  max-width: 40rem;
 }
 
+
 .card-deck {
-  margin: 0px 0 60px 0;
-  display: flex;
-  justify-content: space-evenly;
+  margin-top: 0;
+  margin-left: 0;
+  z-index: -1;
+  
 }
 
 .btn-cv{
     background-color: gray;
-    margin: 150px  0px 0px 450px;
-
 }
 
 /* ----------------------------REDES SOCIAIS -----------------------------------*/

@@ -17,29 +17,32 @@
 <body>
 
     <!--NAVBAR-->
-    <nav id="home" class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">Meu Portfólio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
+    <div class="row row-navbar">
+        <div class="col-12 col-navbar">
+            <nav id="home" class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Meu Portfólio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#sobre">Sobre mim</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contatos">Contato</a>
-                </li>
-            </ul>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre mim</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contatos">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
-
-
+    </div>
     <!--HEADER BANNER-->
     <div class="banner">
         <div class="container">
@@ -59,39 +62,56 @@
     <!--SOBRE-->
     <div id="sobre" class="sobre">
         <h2 class="sobre__titulo">Um pouco mais sobre mim!!!</h2>
-        <p class="card-text">Eu sou <strong>Débiny Rocha</strong>, mãe de dois filhos, nascida em Curitiba e atualmente residente em Osasco, analista de qualidade de coração atuando atualmente como Engenheira de Software!</p>
+        <p class="card-text">Eu sou <strong>Débiny Rocha</strong>, mãe de dois filhos, nascida em Curitiba e
+            atualmente
+            residente em Osasco, analista de qualidade de coração atuando atualmente como Engenheira de Software!
+        </p>
     </div>
 
-    <div class="card-deck">
-        <div class="card sobre-habilidades">
-            <div class="card-body">
-                <h3 class="sobre-habilidades__titulo">Resumo</h3>
-                <p class="sobre-descricao__texto ">Analista de testes responsável pelo acompanhamento das demandas da
-                    equipe, elaboração de planos e casos de testes, execução de testes, planejamento e homologação de
-                    novas funcionalidades.</p>
-                <p class="sobre__texto">Atualmente trabalho no grupo SBF, na squad de Atendimento e estou em migração para Engenharia de Software, aprendendo
-                    backend em C# e frontend em node e react.</p>
-                <a class="btn btn-cv"  href="./docs/cv.txt" download target="_blank">Veja meu cv</a>
+    <div class="container">
+        <div class="row ">
+            <div class="col card sobre-descricao">
+                <div class="card-body">
+                    <h3 class="sobre-descricao__titulo">Resumo</h3>
+                    <p class="sobre-descricao__texto ">Analista de testes responsável pelo acompanhamento das
+                        demandas
+                        da
+                        equipe, elaboração de planos e casos de testes, execução de testes, planejamento e
+                        homologação
+                        de
+                        novas funcionalidades.</p>
+                    <p class="sobre__texto">Atualmente trabalho no grupo SBF, na squad de Atendimento e estou em
+                        migração
+                        para Engenharia de Software, aprendendo
+                        backend em C# e frontend em node e react.</p>
+                    <a class="btn btn-cv" href="./docs/cv.txt" download target="_blank">Veja meu cv</a>
+                </div>
             </div>
-        </div>
+  
 
-        <div class="card sobre-descricao">
-            <div class="card-body">
-                <h3 class="sobre-habilidades__titulo">Minhas habilidades</h3>
-                <ul class="lista-habilidades">
-                    <li>Análise das estorias, elaboração e priorização dos casos de testes (Testlink, TestManager, JIRA;
-                    </li>
-                    <li>Execução de Casos de Testes em aplicações Web (Sap Hybris, Sap Backoffice, SAP C4C, SAP Contact
-                        Center e plataforma de Marketplace -Mirakl) e internas (Gold, TMS</li>
-                    <li>este de APIS ( Postaman,SoapUI)</li>
-                    <li>Estimativa, priorização e planejamento das atividades de testes Manuais e Automatizada</li>
-                    <li>Acompanhamento e reports do andamento dos testes e acompanhamento de bugs</li>
-                    <li>Automação de APIs com httparty</li>
-                    <li>Conhecimento básico em teste de performance com Jmeter</li>
-                </ul>
+            <div class="col card sobre-habilidades">
+                <div class="card-body">
+                    <h3 class="sobre-habilidades__titulo">Minhas habilidades</h3>
+                    <ul class="lista-habilidades">
+                        <li>Análise das estorias, elaboração e priorização dos casos de testes (Testlink,
+                            TestManager,
+                            JIRA;
+                        </li>
+                        <li>Execução de Casos de Testes em aplicações Web (Sap Hybris, Sap Backoffice, SAP C4C, SAP
+                            Contact
+                            Center e plataforma de Marketplace -Mirakl) e internas (Gold, TMS</li>
+                        <li>este de APIS ( Postaman,SoapUI)</li>
+                        <li>Estimativa, priorização e planejamento das atividades de testes Manuais e Automatizada
+                        </li>
+                        <li>Acompanhamento e reports do andamento dos testes e acompanhamento de bugs</li>
+                        <li>Automação de APIs com httparty</li>
+                        <li>Conhecimento básico em teste de performance com Jmeter</li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>   
+    </div>
+    </div>
 
 </body>
 
