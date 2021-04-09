@@ -15,63 +15,76 @@
 
 
 <body>
+    <div class="container-fluid">
+        <!--NAVBAR-->
+        <div id="home" class="row row-navbar">
+            <div class="col-12 col-navbar">
+                <nav  class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="#">Meu Portfólio</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-    <!--NAVBAR-->
-    <div class="row row-navbar">
-        <div class="col-12 col-navbar">
-            <nav id="home" class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Meu Portfólio</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#sobre">Sobre mim</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contatos">Contato</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#banner">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#sobre">Sobre mim</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contatos">Contato</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </div>
-    </div>
-    <!--HEADER BANNER-->
-    <div class="banner">
-        <div class="container">
-            <h1 class="banner__titulo>">Oi, eu sou Débiny Rocha!</h1>
-            <div class="banner-text">
+
+        <!--HEADER BANNER-->
+        <div id="banner" class="banner col-12">
+            <div class="col-sm-12 col-md-4">
+                <img class="banner__foto" src="img/foto.png" alt="Foto Perfil">
+            </div>
+
+            <div class="col-4 banner__titulo">
+                <h1 id="titulo">Oi, eu sou Débiny Rocha!</h1>
                 <h5>Engenheira de software | Grupo SBF</h5>
                 <p>Osasco, São Paulo, Brasil</p>
                 <a class="btn btn-sobre" href="#sobre">Veja mais sobre mim</a>
-
             </div>
 
-
+            <div class="col-4">
+            </div>
 
         </div>
-    </div>
 
-    <!--SOBRE-->
-    <div id="sobre" class="sobre">
-        <h2 class="sobre__titulo">Um pouco mais sobre mim!!!</h2>
-        <p class="card-text">Eu sou <strong>Débiny Rocha</strong>, mãe de dois filhos, nascida em Curitiba e
-            atualmente
-            residente em Osasco, analista de qualidade de coração atuando atualmente como Engenheira de Software!
-        </p>
-    </div>
+        <!--SOBRE-->
+        <div class="col-12 sobre">
+            <h2 class="sobre__titulo">Um pouco mais sobre mim!!!</h2>
+            <p class="card-text">Eu sou <strong>Débiny Rocha</strong>, mãe de dois filhos, nascida em
+                Curitiba e atualmente residente em Osasco, analista de qualidade de coração atuando atualmente como
+                Engenheira de
+                Software!
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi eget eleifend magna. Morbi accumsan justo
+                diam, vitae ullamcorper eros porta at. Curabitur ac purus turpis. Sed laoreet purus in pulvinar
+                tincidunt. Vivamus sed justo eget velit sodales sollicitudin. Suspendisse malesuada dui eu ipsum
+                porttitor, sit amet sagittis turpis volutpat. Maecenas sed mattis metus, non hendrerit dolor. Ut eget
+                vulputate odio. Suspendisse id luctus nisi, id vulputate justo. Nunc justo enim, venenatis at est et,
+                ornare faucibus mi. Phasellus efficitur congue turpis nec placerat. Pellentesque pharetra gravida
+                imperdiet. Aliquam erat volutpat. Proin semper lacus dignissim mollis imperdiet. Vivamus venenatis neque
+                id augue pharetra consequat.
+            </p>
 
-    <div class="container">
-        <div class="row ">
-            <div class="col card sobre-descricao">
-                <div class="card-body">
+        </div>
+
+        <!--CARD-->
+        <div id="sobre" class="row ">
+            <div class="col-sm-12 col-xs-6 col-md-12 card sobre-descricao">
+                <div   class="card-body">
                     <h3 class="sobre-descricao__titulo">Resumo</h3>
                     <p class="sobre-descricao__texto ">Analista de testes responsável pelo acompanhamento das
                         demandas
@@ -87,9 +100,9 @@
                     <a class="btn btn-cv" href="./docs/cv.txt" download target="_blank">Veja meu cv</a>
                 </div>
             </div>
-  
 
-            <div class="col card sobre-habilidades">
+
+            <div class="col-sm-12 col-xs-6 col-md-12 card sobre-habilidades">
                 <div class="card-body">
                     <h3 class="sobre-habilidades__titulo">Minhas habilidades</h3>
                     <ul class="lista-habilidades">
@@ -110,60 +123,62 @@
                 </div>
             </div>
         </div>
-    </div>
-    </div>
 
 </body>
 
 <!-- SEÇÃO FOOTER -->
-<div class="footer ">
-    <div id="contatos" class="row redes-sociais">
-        <div class="footer__contatos">
-            <a href="https://www.linkedin.com/in/debiny/" target="_blank" class="redes-sociais__link">
+<div id="contatos" class="row footer redes-sociais">
+    <div class="col-sm-6  col-md-2 redes-sociais">
+        <a href="https://www.linkedin.com/in/debiny/" target="_blank" class="redes-sociais__link">
+            <div class="redes-sociais__link">
                 <img src="img/linkedin.png" alt="Icone do Linkedin">
                 <h6 class="redes-sociais__titulo">Linkedin</h6>
+            </div>
+        </a>
+    </div>
 
-            </a>
-        </div>
+    <div class="col-sm-6  col-md-2 redes-sociais">
+        <a href="https://github.com/debiny" target="_blank" class="redes-sociais__link">
+            <div class="redes-sociais__link">
 
-        <div class="footer__contatos">
-            <a href="https://github.com/debiny" target="_blank" class="redes-sociais__link">
                 <img src="img/github.png" alt="Icone do Github">
                 <h6 class="redes-sociais__titulo">Github</h6>
+            </div>
+        </a>
 
-            </a>
-        </div>
+    </div>
+    <div class="col-sm-6 col-md-2 redes-sociais">
+        <a href="https://web.telegram.org/#/login" target="_blank" class="redes-sociais__link">
+            <div class="redes-sociais__link">
+                <div class="redes-sociais__link">
+                    <img src="img/telegram.png" alt="Icone do Telegran">
+                    <h6 class="redes-sociais__titulo">Telegran</h6>
+                </div>
+            </div>
+        </a>
 
-        <div class="footer__contatos">
-            <a href="https://web.telegram.org/#/login" target="_blank" class="redes-sociais__link">
-                <img src="img/telegram.png" alt="Icone do Telegran">
-                <h6 class="redes-sociais__titulo">Telegran</h6>
-
-            </a>
-        </div>
-
-        <div class="footer__contatos">
-            <a href="https://web.whatsapp.com/" target="_blank" class="redes-sociais__link">
+    </div>
+    <div class="col-sm-6 col-md-2 redes-sociais">
+        <a href="https://web.whatsapp.com/" target="_blank" class="redes-sociais__link">
+            <div class="redes-sociais__link">
                 <img src="img/whatsapp.png" alt="Icone do Whatsapp">
                 <h6 class="redes-sociais__titulo">Whatsapp</h6>
+            </div>
+        </a>
 
-            </a>
-        </div>
-
-        <div class="footer__contatos">
-            <a href="mailto:someone@microsoft.com?subject=Oi,Debiny!" target="_blank" class="redes-sociais__link">
+    </div>
+    <div class="col-sm-6 col-md-2 redes-sociais">
+        <a href="mailto:someone@microsoft.com?subject=Oi,Debiny!" target="_blank" class="redes-sociais__link">
+            <div class="redes-sociais__link">
                 <img src="img/email.png" alt="Icone do Email">
                 <h6 class="redes-sociais__titulo">Email</h6>
-
-            </a>
-        </div>
-
+            </div>
+        </a>
 
     </div>
     <div class="footer__copyright">
         <p class="footer__copy-texto"></p>Copyright 2019</p>
     </div>
-</div>
 
 
 
